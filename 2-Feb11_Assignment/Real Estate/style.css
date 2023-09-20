@@ -1,0 +1,430 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    border: none;
+}
+
+.color {
+    color: #fff;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #eae5e5;
+}
+
+/* Section 1 */
+#sec1 {
+    background: url(./Photos/mainBackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 125vh;
+    position: relative;
+}
+
+/* Section 1 Header */
+header {
+    margin: 0 5rem;
+}
+
+nav {
+    margin: 0 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem;
+}
+
+nav div img {
+    width: 80%;
+}
+
+nav ul {
+    display: flex;
+    gap: 3.5rem;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+#navLine {
+    border: 1px solid #fff;
+}
+
+/* Section 1 Content */
+#sec1Content {
+    color: #fff;
+    margin: 7rem 8rem;
+}
+
+#sec1Content h1 {
+    font-size: 4.3rem;
+    line-height: 5.5rem;
+    margin-bottom: 2rem;
+}
+
+#sec1Content p {
+    font-size: 1.1rem;
+}
+
+#sec1Content button {
+    margin-top: 1rem;
+    padding: 0.4em 1.6em;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #fff;
+    background-color: #8d1cce;
+    border-radius: 50px;
+    border: none;
+}
+
+/* Section 2 Logo */
+#sec2 {
+    background-color: #fff;
+    padding: 4rem 1rem;
+    margin: 0 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    position: relative;
+    bottom: 6rem;
+    z-index: 1;
+}
+
+/* Section 3 Cards */
+#sec3 {
+    background-color: #eae5e5;
+    padding: 5rem 0;
+}
+
+#sec3 h3 {
+    text-align: center;
+    font-size: 4rem;
+    line-height: 6rem;
+    margin-bottom: 3rem;
+}
+
+#sec3Content {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    grid-template-rows: repeat(3, minmax(500px, 1fr));
+    row-gap: 1rem;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:nth-child(2),
+:nth-child(5),
+:nth-child(8) {
+    top: 1.5rem;
+}
+
+.card:nth-child(3),
+:nth-child(4),
+:nth-child(9) {
+    top: 3rem;
+}
+
+.card img {
+    width: 70%;
+    min-height: 80%;
+    border-radius: 10px;
+}
+
+.card div {
+    width: 60%;
+    background-color: #fff;
+    position: absolute;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    bottom: 1rem;
+}
+
+.card div p span {
+    color: #8d1cce;
+}
+
+.card div button {
+    border: none;
+    color: #fff;
+    background-color: #8d1cce;
+    padding: 0.8em 2.5em;
+    border-radius: 50px;
+}
+
+/* Section 4 Horizontal Cards */
+#sec4 {
+    width: 100vw;
+    position: relative;
+    background-color: #eae5e5;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(500px, 1fr));
+    grid-template-rows: repeat(2, minmax(500px, 1fr));
+}
+
+#sec4>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#sec4B,
+#sec4C {
+    gap: 1rem;
+}
+
+#sec4B *,
+#sec4C * {
+    padding: 0 3rem;
+}
+
+#sec4B h2,
+#sec4C h2 {
+    font-size: 3rem;
+}
+
+#sec4B button,
+#sec4C button {
+    font-size: 1.1rem;
+    padding: 0.2em 1em;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    background-color: #8d1cce;
+}
+
+#sec4D {
+    align-items: flex-end;
+}
+
+#sec4A div,
+#sec4D div {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#sec4A img,
+#sec4D img {
+    position: absolute;
+}
+
+#sec4A div img:last-child {
+    left: 14%;
+    top: 0;
+}
+
+#sec4A div img:first-child {
+    left: 0;
+    top: 7%;
+}
+
+#sec4D div img:first-child {
+    right: 0;
+    top: 7%;
+}
+
+#sec4D div img:last-child {
+    right: 14%;
+    top: 0;
+}
+
+#sec4A div img:first-child,
+#sec4D div img:first-child {
+    width: 70%;
+    height: 85%;
+}
+
+#sec4A div img:last-child,
+#sec4D div img:last-child {
+    width: 50%;
+    height: 72%;
+    border-radius: 30px;
+}
+
+#sec5 {
+    border-radius: 50px;
+    color: #fff;
+    background-color: #8d1cce;
+    padding: 3rem 16rem;
+    margin: 5rem 4rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+#sec5 h3 {
+    text-align: center;
+    line-height: 4rem;
+    font-size: 3.5rem;
+}
+
+#sec5 p {
+    padding: 0 4rem;
+    text-align: center;
+}
+
+#sec5Input {
+    display: flex;
+    gap: 1rem;
+}
+
+#sec5Input div {
+    border-radius: 5em;
+    padding: 0.5rem 17rem 0.5rem 1rem;
+    background-color: #660e98;
+    display: flex;
+    gap: 0.5rem;
+}
+
+#sec5Input input {
+    background-color: #660e98;
+    padding: 0.5rem 0 0.5 0;
+}
+
+#sec5Input button {
+    color: #8d1cce;
+    font-size: 1.1rem;
+    border-radius: 5em;
+    padding: 0.7rem 2rem;
+    font-weight: 600;
+}
+
+/* Footer */
+footer {
+    margin: 5rem 4rem;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    flex-grow: 1;
+}
+
+footer div>img {
+    width: 10%;
+}
+
+footer div ul {
+    display: flex;
+    gap: 0.5rem;
+}
+
+footer div ul li {
+    list-style: none;
+}
+
+footer div ul li a {
+    text-decoration: none;
+}
+
+footer div ul li a img {
+    width: 80%;
+}
+
+footer>ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0 2rem;
+}
+
+footer>ul li {
+    list-style: none;
+}
+
+footer>ul li:first-child {
+    font-weight: 600;
+}
+
+@media screen and (max-width: 1500px) {
+    #sec3Content {
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        grid-template-rows: repeat(5, minmax(500px, 1fr));
+    }
+
+    .card:nth-child(2),
+    :nth-child(5),
+    :nth-child(8) {
+        top: 0;
+    }
+
+    .card:nth-child(3),
+    :nth-child(4),
+    :nth-child(9) {
+        top: 0;
+    }
+
+    .card div {
+        justify-content: space-between;
+    }
+
+    #sec5 {
+        padding: 2rem 2rem;
+        margin: 0 2rem;
+    }
+
+    #sec5 h3 {
+        line-height: 2rem;
+        font-size: 1.5rem;
+    }
+
+    #sec5 p {
+        padding: 0 2rem;
+    }
+
+}
+
+@media screen and (max-width: 1300px) {
+    #sec3Content {
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        grid-template-rows: repeat(5, minmax(500px, 1fr));
+    }    
+    .card div {
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    #sec3Content {
+        width: 100vw;
+        grid-template-columns: repeat(auto-fit, 1fr);
+        grid-template-rows: repeat(9, minmax(500px, 1fr));
+    }
+
+}
+@media screen and (max-width:768px){
+    #sec4 {
+        width: 100vw;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, minmax(500px, 1fr));
+    }
+}

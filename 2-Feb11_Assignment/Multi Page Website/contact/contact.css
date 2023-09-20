@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #f5f3f3e3;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Header */
+nav {
+    padding: 1rem 8rem;
+    display: flex;
+}
+
+nav div {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+nav div img {
+    width: 18%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Main or Form Section */
+main{
+    margin-top: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form {
+    box-shadow: 0 0 5px 2px #888888;
+    border-radius: 10px;
+    padding: 1rem .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 20%;
+    background-color: #f5f3f3e3;
+}
+form h3{
+    text-align: center;
+}
+form label{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+form input,textarea{
+    font-family: "Poppins", sans-serif;
+    border-radius: 10px;
+    padding: .3rem .2rem ;
+    font-size: .9rem;
+    margin-bottom: .4rem;
+}
+form #message{
+    overflow: hidden;
+    resize: none;
+}
+form #submit-button{
+    margin-top: .4rem;
+    border: none;
+    background-color: #20BC7E;
+    font-weight: 600;
+    color: #fff;
+}
+
+
